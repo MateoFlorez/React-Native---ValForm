@@ -120,7 +120,7 @@ export default function App() {
         control={control}
         rules={{
           required:true,
-          pattern:/^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/
+          pattern:/^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/
         }}
         render={({field:{onChange, onBlur, value}})=>(
           <TextInput
